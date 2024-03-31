@@ -12,6 +12,8 @@ programa {
             leia(vetor[i])
         }
 
+        limpa()
+
         para(inteiro j = 0; j < 10; j++){
             se(vetor[j] % 2 == 0){
                 pares[j] = vetor[j]
@@ -26,7 +28,9 @@ programa {
 
         escreva("Elementos nos índices ímpares:\n")
         para(inteiro i = 0; i < 10; i++){
+            se (impares[i] != nulo) {
                 escreva(impares[i], " ")
+            }
         }
 
         escreva("\nElementos nos índices pares:\n")
